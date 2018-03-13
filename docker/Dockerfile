@@ -3,7 +3,7 @@ FROM node:latest
 
 # set maintainer
 LABEL maintainer "test"
-ENV HTTP_PROXY "http://localhost:12345"
+ENV HTTP_PROXY "http://127.0.0.1:12345"
 # set a health check
 HEALTHCHECK --interval=5s \
             --timeout=5s \
